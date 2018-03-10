@@ -109,12 +109,12 @@ h1{
     bottom: 0;
 	padding-bottom: 20px;
     position: relative;
-    min-width: 300px;
+    width: 500px;
 }
 	#sidebar h2{
         border: none;
         outline: none;
-        padding: 0.5em 0em 0em 2em;
+        padding: 1vw 0 0 3vw;
         height: auto;
         color: rgb(20,20,20);
         font-family: Optima;
@@ -148,13 +148,14 @@ footer{
 }
 
 
-/**---------Accordion-----------**/
+/** BEGIN Accordion **/
 .accordion {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1100px;
   height: 250px;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 0;
+  left: 0;
 
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
   -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
@@ -299,6 +300,7 @@ footer{
     #sidebar {
         left: -300px;
         height: 0;
+        width: 0;
     }
 
     #NewsContent{
