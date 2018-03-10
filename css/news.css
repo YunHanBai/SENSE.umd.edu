@@ -1,0 +1,316 @@
+/* ==================================
+  # News & Events Page
+================================== */
+
+body{
+    background-color: #f2f2f2;
+    height: 100%;
+}
+
+h1{
+    color: #FFFFFF;
+    background-color: #000;
+    border: none;
+    outline: none;
+    padding: 10px 0px 10px 50px;
+    height: auto;
+    margin: 0;
+    font-family: Optima;
+}
+
+#header{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#empty{
+    height: 50px;
+    background-color: transparent;
+}
+
+#headerPic{
+    width: 200%;
+    max-height: 300px;
+}
+
+#content{
+    margin: 0px, 5%;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+/** BEGIN Search **/
+
+.search {
+    background: url(../img/search.gif) no-repeat center center;
+    border-width: 1px 0;
+    border-color: #E8E8E8;
+    border-style: solid;
+    height: 52px;
+    width: 300px;
+}
+    .search input {
+        float: left;
+        border: 0;
+        font-size: 1.2em;
+        font-family: Verdana;
+        width: 200px;
+        margin: 12px 11px 0 22px;
+    }
+    .search button {
+        float: left;
+        border: 0;
+        text-indent: -9999px;
+        width: 53px; height: 32px;
+        margin-top: 10px;
+        background-color: transparent;
+    }
+
+/** BEGIN newscontent **/
+
+#NewsContent{
+    flex-grow: 8;
+    float: right;
+    position: relative;
+}
+
+    #NewsTitle{
+        margin-top: 1em;
+        text-align: left;
+        font-size: 5vh;
+    }
+
+    .post{
+        font-size: 2.5vh;
+        max-width: 90%;
+    }
+
+    .post h2{
+        margin-top: 5vh;
+        font-family: Verdana;
+        font-size: 125%;
+        font-weight: 600;
+    }
+        .date{
+            font-style: italic;
+            font-size: 80%;
+        }
+
+/************************************************************/
+
+/** BEGIN sidebar **/
+
+#sidebar {
+    flex-grow: 2;
+    height: 100%;
+	float: left;
+    bottom: 0;
+	padding-bottom: 20px;
+    position: relative;
+    min-width: 300px;
+}
+	#sidebar h2{
+        border: none;
+        outline: none;
+        padding: 0.5em 0em 0em 2em;
+        height: auto;
+        color: rgb(20,20,20);
+        font-family: Optima;
+        font-size: 180%;
+    }
+	#sidebar ul {
+		list-style-type: disc;
+        padding-left: 15%;
+	}
+		#sidebar ul li {
+			border-bottom: 1px dotted #DADADA;
+			line-height: 1.4em;
+			padding: 4px 0;
+			font-size: 1.2em;
+		}
+		#sidebar ul li a {
+			color: #808080;
+		}
+		#sidebar ul li a:hover {
+			color: #DC1000;
+		}
+
+	#sidebar sidemenu {
+		width: 125px;
+	}
+
+/** END sidebar **/
+
+footer{
+    bottom:0;
+}
+
+
+/**---------Accordion-----------**/
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px auto;
+
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -o-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -ms-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  -o-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  -ms-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 180px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+
+/**Add img**/
+.accordion ul li:nth-child(1) {
+    background-image: url("../img/nature.jpg");
+    background-size: cover;
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url("../img/Revision1.jpg");
+    background-size: cover;
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url("../img/continuedTesting.jpg");
+    background-size: cover;
+}
+
+.accordion ul li:nth-child(4) {
+    background-image: url("../img/rooftop.jpg");
+    background-size: cover;
+}
+
+.accordion ul li:nth-child(5) {
+    background-image: url("../img/station.jpg");
+    background-size: cover;
+}
+
+.accordion ul li:nth-child(6) {
+    background-image: url("../img/urbanCO2.png");
+    background-size: cover;
+}
+
+/**Transform**/
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 30%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/**Media**/
+@media screen and (max-width: 800px) {
+
+    .accordion {
+        height: 0;
+        margin: 0;
+    }
+
+    #content{
+        display: block;
+    }
+
+    #sidebar {
+        left: -300px;
+        height: 0;
+    }
+
+    #NewsContent{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+        padding-left: 7vw;
+        width: 100%;
+    }
+
+    #NewsTitle{
+        top: 0;
+        margin-top: 0;
+    }
+}
