@@ -1,0 +1,86 @@
+#ArticleTitle{
+  font-weight: 600;
+  font-size: 6vh;
+}
+
+#share-buttons img {
+  width: 35px;
+  padding: 2px;
+  display: inline;
+}
+
+#headbar form {
+  position: relative;
+}
+
+#headbar a {
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  right: -47%;
+}
+
+#headbar a:hover {
+  cursor: pointer;
+}
+
+.date{
+  margin-top: 1vh;
+}
+
+.picture {
+  max-width: 80%;
+  overflow: hidden;
+  padding: 5px;
+  background-color: #EEEEEE;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 10px;
+}
+
+.paragraph{
+  margin-top: 6vh;
+}
+
+.note{
+  font-style: italic;
+  color: #666;
+  text-indent: 2em;
+}
+
+/*To Top Button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0%;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -o-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  -ms-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+#myBtn:hover {
+  color: #ffd520;
+}
+
+@media screen and (max-width: 800px) {
+  #myBtn{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #headbar a {
+    visibility:
+  }
+}

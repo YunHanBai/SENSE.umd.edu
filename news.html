@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable = no"/>
     <title>News | SENSE</title>
-    <link rel="icon" href="img/sealwhite.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="static/img/sealwhite.png" type="image/png" sizes="16x16">
     <link href = "https://fonts.googleapis.com/css?family=
  Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel = "stylesheet" type = "text/css">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-    <link rel = "stylesheet" type = "text/css"  href = "css/News.css">
+    <link rel = "stylesheet" type = "text/css" href = "static/css/style.css">
+    <link rel = "stylesheet" type = "text/css"  href = "static/css/News.css">
+    <link rel = "stylesheet" type = "text/css"  href = "static/css/newsIndex.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -35,7 +36,7 @@
 
                         <li><a href="#info1">About</a></li>
                         <li><a href="./people.html">People</a></li>
-                        <li><a href="#news">News</a></li>
+                        <li><a href="./news.html">News</a></li>
                         <li><a href="#info2">Sensor Locations</a></li>
                         <li><a href="#info3">Get Involved</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -48,7 +49,7 @@
         <!--Beginning-->
         <div class="container-fluid" id="header">
             <div id="empty"></div>
-            <img class="img-responsive" id="headerPic" src="img/NewsHeader.jpg">
+            <img class="img-responsive" id="headerPic" src="static/img/NewsHeader.jpg">
             <h1><b>News</b></h1>
         </div>
 
@@ -69,7 +70,7 @@
                 <!-- begin popular posts -->
                 <h2>Popular Posts</h2>
                 <ul>
-                  <li><a href="#">New Sensor Locations</a></li>
+                  <li><a href="./newSensorLocations.html">New Sensor Locations</a></li>
                   <li><a href="#">Sensor Near Space</a></li>
                   <li><a href="#">Congratulations to Cooper!</a></li>
                 </ul>
@@ -79,7 +80,7 @@
                   <!-- begin archives -->
                   <h2>Archives</h2>
                   <ul>
-                    <li><a href="#">August 2016</a></li>
+                    <li><a href="./newSensorLocations.html">August 2016</a></li>
                     <li><a href="#">March 2016</a></li>
                     <li><a href="#">March 2015</a></li>
                     <li><a href="#">February 2015</a></li>
@@ -112,7 +113,7 @@
                 <div class="accordion">
                   <ul>
                     <li>
-                      <div> <a href="#">
+                      <div> <a href="./newSensorLocations.html">
                         <h2>New Sensor Locations</h2>
                         </a> </div>
                     </li>
@@ -148,15 +149,15 @@
               <!-- begin post -->
               <h2 id="NewsTitle"><b>Recent News</b></h2>
               <div class="post">
-                <!-- <div class="thumb container"><a href="#"><img class="thumbImg  img-responsive" src="img/nature.jpg" alt="" /></a></div> -->
-                <h2><a href="#">New Sensor Locations</a></h2>
+
+                <h2><a href="./newSensorLocations.html">New Sensor Locations</a></h2>
                 <p class="date">Posted on August 17, 2016 by <a href="http://aosc.umd.edu/~cmartin/">Cory Martin</a></p>
                 <p>Within the past few weeks, two additional sensors have been installed, one in the heart of Washington, DC and another on the eastern shore of the Chesapeake Bay.</p>
-                <a class="continue" href="#">Continue Reading</a> </div>
+                <a class="continue" href="./newSensorLocations.html">Continue Reading</a> </div>
               <!-- end post -->
               <!-- begin post -->
               <div class="post">
-                <!-- <div class="thumb container"><a href="#"><img class="thumbImg  img-responsive" src="img/nature.jpg" alt="" /></a></div> -->
+
                 <h2><a href="#">Sensor Near Space</a></h2>
                 <p class="date">Posted on March 25, 2016 by <a href="http://aosc.umd.edu/~cmartin/">Cory Martin</a></p>
                 <p>Late last fall, one UMD AOSC undergraduate student, Michael Hoffman, flew one of our sensor packages as part of the UMD Nearspace balloon program.</p>
@@ -164,7 +165,7 @@
               <!-- end post -->
               <!-- begin post -->
               <div class="post">
-                <!-- <div class="thumb container"><a href="#"><img class="thumbImg  img-responsive" src="img/nature.jpg" alt="" /></a></div> -->
+
                 <h2><a href="#">Congratulations to Cooper!</a></h2>
                 <p class="date">Posted on March 23, 2015 by <a href="http://www.atmos.umd.edu/~zeng/">Ning Zeng</a></p>
                 <p>Congratulations to Cooper Gilbert, who has taken on the challenge of leading the Aerospace Engineering Department’s Near-space Balloon Launch Program. We will miss Cooper in the SENSE project. Best of luck, Cooper!</p>

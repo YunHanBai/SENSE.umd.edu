@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable = no"/>
     <title>New Sensor Locations | SENSE</title>
-    <link rel="icon" href="img/sealwhite.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="static/img/sealwhite.png" type="image/png" sizes="16x16">
     <link href = "https://fonts.googleapis.com/css?family=
  Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel = "stylesheet" type = "text/css">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-    <link rel = "stylesheet" type = "text/css"  href = "css/News.css">
-    <link rel = "stylesheet" type = "text/css"  href = "css/Article.css">
+    <link rel = "stylesheet" type = "text/css" href = "static/css/style.css">
+    <link rel = "stylesheet" type = "text/css"  href = "static/css/news.css">
+    <link rel = "stylesheet" type = "text/css"  href = "static/css/article.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,98 +20,101 @@
 
 
   <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">SENSE</a>
-              </div>
-              <div id="navbar" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SENSE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
 
-                      <li><a href="#info1">About</a></li>
-                      <li><a href="./people.html">People</a></li>
-                      <li><a href="./news.html">News</a></li>
-                      <li><a href="#info2">Sensor Locations</a></li>
-                      <li><a href="#info3">Get Involved</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li><a href="#login">Login</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
-      <!--Beginning-->
-      <div class="container-fluid" id="header">
-          <div id="empty"></div>
-          <img class="img-responsive" id="headerPic" src="img/NewsHeader.jpg">
-          <h1><b><a id="backToNews" href="./news.html">News</a></b></h1>
+            <li><a href="#info1">About</a></li>
+            <li><a href="./people.html">People</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="#info2">Sensor Locations</a></li>
+            <li><a href="#info3">Get Involved</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <!-- BEGIN search -->
+    <!--Beginning-->
+    <div class="container-fluid" id="header">
+      <div id="empty"></div>
+      <img class="img-responsive" id="headerPic" src="static/img/NewsHeader.jpg">
+      <h1><b>News</b></h1>
+    </div>
 
+    <!-- BEGIN search -->
+    <div id="headbar">
       <form class="search" action="#">
         <input type="text" name="s" id="s" />
-        <button type="submit">Search</button>
+        <span><button type="submit">Search</button>
       </form>
+      <!-- Back to News -->
+      <a class="backToNews" href="./news.html">Back to News</a>
+    </div>
+
       <!-- BEGIN search -->
 
       <!-- To TOP Button -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up fa-4x"></i></button>
+      <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fas fa-angle-double-up fa-4x"></i></button>
 
       <div id="content">
 
 
-          <!-- BEGIN sidebar -->
-          <div id="sidebar">
-            <div class="wrapper">
-              <!-- begin popular posts -->
-              <h2>Popular Posts</h2>
+        <!-- BEGIN sidebar -->
+        <div id="sidebar">
+          <div class="wrapper">
+            <!-- begin popular posts -->
+            <h2>Popular Posts</h2>
+            <ul>
+              <li><a href="./newSensorLocations.html">New Sensor Locations</a></li>
+              <li><a href="#">Sensor Near Space</a></li>
+              <li><a href="#">Congratulations to Cooper!</a></li>
+            </ul>
+            <!-- end popular posts -->
+            <!-- BEGIN right -->
+            <div class="sidemenu">
+              <!-- begin archives -->
+              <h2>Archives</h2>
               <ul>
-                <li><a href="#">New Sensor Locations</a></li>
-                <li><a href="#">Sensor Near Space</a></li>
-                <li><a href="#">Congratulations to Cooper!</a></li>
+                <li><a href="./newSensorLocations.html">August 2016</a></li>
+                <li><a href="#">March 2016</a></li>
+                <li><a href="#">March 2015</a></li>
+                <li><a href="#">February 2015</a></li>
+                <li><a href="#">November 2014</a></li>
+                <li><a href="#">October 2014</a></li>
+                <li><a href="#">September 2014</a></li>
+                <li><a href="#">August 2014</a></li>
               </ul>
-              <!-- end popular posts -->
-              <!-- BEGIN right -->
-              <div class="sidemenu">
-                <!-- begin archives -->
-                <h2>Archives</h2>
-                <ul>
-                  <li><a href="#">August 2016</a></li>
-                  <li><a href="#">March 2016</a></li>
-                  <li><a href="#">March 2015</a></li>
-                  <li><a href="#">February 2015</a></li>
-                  <li><a href="#">November 2014</a></li>
-                  <li><a href="#">October 2014</a></li>
-                  <li><a href="#">September 2014</a></li>
-                  <li><a href="#">August 2014</a></li>
-                </ul>
-                <!-- end archives -->
-                <!-- begin categories -->
-                <h2>Categories</h2>
-                <ul>
-                  <li><a href="#">Driving</a></li>
-                  <li><a href="#">Network</a></li>
-                  <li><a href="#">Outreach</a></li>
-                  <li><a href="#">Sensor</a></li>
-                  <li><a href="#">Uncategorized</a></li>
-                </ul>
-                <!-- end categories -->
-              </div>
-              <!-- END right -->
+              <!-- end archives -->
+              <!-- begin categories -->
+              <h2>Categories</h2>
+              <ul>
+                <li><a href="#">Driving</a></li>
+                <li><a href="#">Network</a></li>
+                <li><a href="#">Outreach</a></li>
+                <li><a href="#">Sensor</a></li>
+                <li><a href="#">Uncategorized</a></li>
+              </ul>
+              <!-- end categories -->
             </div>
+            <!-- END right -->
           </div>
+        </div>
 
           <!-- BEGIN News Content -->
 
             <div id="NewsContent">
-
 
                 <!-- Article Title -->
                 <h2 id="ArticleTitle"><b>New Sensor Locations</b></h2>
@@ -145,10 +148,10 @@
                     <p class="date">Posted on August 17, 2016 by <a href="http://aosc.umd.edu/~cmartin/">Cory Martin</a></p>
                     <p class="paragraph">Within the past few weeks, two additional sensors have been installed, one in the heart of Washington, DC and another on the eastern shore of the Chesapeake Bay.</p>
                     <p class="paragraph">The first one, is at the University of Maryland Center for Environmental Science at the Horn Point Lab in Cambridge, MD. The sensor package was placed near a picnic site on the banks of the Choptank River just inland from the Chesapeake Bay.</p>
-                    <div class="picture container"><img class="img-responsive" src="img/nature.jpg" alt="" /></a></div>
+                    <div class="picture container"><img class="img-responsive" src="static/img/nature.jpg" alt="" /></div>
                     <p class="note">Sensor at the Horn Point Lab</p>
                     <p class="paragraph">The second is located at one of the District of Columbia’s Department of Energy and the Environment’s air quality monitoring locations. This is located just off of 295 at Benning Road.</p>
-                    <div class="picture container"><img class="img-responsive" src="img/benningRd.jpg" alt="" /></a></div>
+                    <div class="picture container"><img class="img-responsive" src="static/img/benningRd.jpg" alt="" /></div>
                     <p class="note">DDOE Air Quality site off of 295 in DC</p>
                     <p class="paragraph">We hope to have more locations installed during the upcoming months.</p>
                     <!-- end post -->
